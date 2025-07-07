@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إلى نور 💖</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #f8d7da, #fff);
+      font-family: 'Tahoma', sans-serif;
+      color: #2c2c2c;
+      direction: rtl;
+    }
+    #container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 1.5s ease;
+    }
+    .hidden {
+      opacity: 0;
+      pointer-events: none;
+      height: 0;
+      overflow: hidden;
+    }
+    .visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    video {
+      width: 360px;
+      height: 640px;
+      object-fit: cover;
+      border: 5px solid #b3003c;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(179, 0, 60, 0.4);
+    }
+    #message-container {
+      padding: 3rem 1rem;
+    }
+    #message {
+      background-color: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      font-size: 1.3rem;
+      line-height: 2.2;
+      color: #b3003c;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: justify;
+    }
+    #heart {
+      display: block;
+      margin-top: 1.5rem;
+      font-size: 2rem;
+      animation: heartbeat 1.2s infinite;
+      text-align: center;
+    }
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.3);
+      }
+    }
+    audio {
+      display: none;
+    }
+    #welcome-button {
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      background-color: #b3003c;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+    #welcome-button:hover {
+      background-color: #8a002e;
+    }
+  </style>
+</head>
+<body>
+  <audio id="bgMusic" loop>
+    <source src="music.m4a" type="audio/mp4">
+    متصفحك لا يدعم تشغيل الصوت.
+  </audio>
+
+  <div id="container">
+    <div id="welcome-container" class="section visible">
+      <button id="welcome-button">بس دقيقة من وقتج </button>
+    </div>
+
+    <div id="video-container" class="section hidden">
+      <video id="loveVideo" controls playsinline>
+        <source src="video.mp4" type="video/mp4">
+        متصفحك لا يدعم عرض الفيديو.
+      </video>
+    </div>
+
+    <div id="message-container" class="section hidden">
+      <div id="message">
+        <strong>خادم عيونج 💌</strong><br><br>
+        نور الي اوصفها امي  و هية روحي و مناي من الدنيا هاي غلطت بحقج هواي ما جنتي اطلبين غير حقج الي المفروض ما اطلبي اصلا الي المفروض ما تحسين انو غاب عنج اصلا و اني اسف قصرت هواي كلش هواي و حقج على راسي و من عيوني كاعد اكتب الرسالة و اسوي هاي الصفحة رجعلي هذا الشعور الي يجنن هذا الشعور الي خلاني اسعد انسان بالعالم الشعور انو اكون وياج و اسوي امور الج الشعور الي خلاني هيج انشر ستوريات حب و غرام و اني ما مهتم و مطنش العالم و شي يكولون خلي يكولون مشتاق الهاي الايام الاحلو و اريد ارجع اسوي بكدهن و اكثر بعد  ما انسى حنانج و حبج ابدا و حدة من الامور الي مستحيل انساها لمن جنت كاعد بالسكن و حدي بالشتاء و الدنيا باردة و الدنيا ضلمة و كهرباء ما عندي و جوعان و انتي دزيتيلي مدفة و ضوة شحن و اكل دافي كل ما اتذكرها احس اغرق بالحب وياج  و هذا و عد مني بعد ما اخليج ابد هيج تحسين او اطلبين راح اكون وياج دوم و بكل مكان حتلو جنت بالنص الثاني من العالم او بغير كوكب راح اكون وياج بطريقة ما و عد صح غبت عنج و قصرت وياج بس و لله ما يوم غبتي عن قلبي و روحي انتي مرات جانت ياخذني الشغل و البرمجة و اهلي و تقصري هم و لله كلش اسف عليها و كاعد احجي صدق ، صدق كعدت و حجيت و ية نفسي و فكرت بالامور و شفت روحي شكد مقصر جنت و غلطان بحق اجمل ماسة الي ما يتقارن بيها اي ماسة بالعالم يا جوهرة قلبي و روحي الي صار وياي ظروف شغل و اهل و بعد بس لا اني و لا اي احد ينكر قصرت بس و لله حتى لمن جنت اشتغل كل هدفي انو اكدر اوصل مرحلة اكدر بيها اليق بحبج الي اكو كفو الج و اكدر فعلن اكدر اصير خادم لعيونج.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const welcomeContainer = document.getElementById("welcome-container");
+    const videoContainer = document.getElementById("video-container");
+    const messageContainer = document.getElementById("message-container");
+    const welcomeButton = document.getElementById("welcome-button");
+    const video = document.getElementById("loveVideo");
+    const bgMusic = document.getElementById("bgMusic");
+
+    bgMusic.volume = 0.5;
+
+    welcomeButton.addEventListener("click", () => {
+      bgMusic.play();
+      welcomeContainer.classList.remove("visible");
+      welcomeContainer.classList.add("hidden");
+      videoContainer.classList.remove("hidden");
+      videoContainer.classList.add("visible");
+      video.play();
+    });
+
+    video.addEventListener("ended", () => {
+      videoContainer.classList.remove("visible");
+      videoContainer.classList.add("hidden");
+      messageContainer.classList.remove("hidden");
+      messageContainer.classList.add("visible");
+      window.scrollTo(0, 0);
+    });
+  </script>
+</body>
+</html>
